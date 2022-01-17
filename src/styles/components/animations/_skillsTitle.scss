@@ -1,0 +1,20 @@
+.skillsTitle {
+    .text-content {
+        overflow: hidden;
+
+        .blast {
+            letter-spacing: 3px;
+            display: inline-flex;
+
+            color: #ffc13b;
+            font-family: 'PassionOne-Regular';
+            font-size: 70px;
+            font-weight: 100;
+            opacity: 0;
+        }
+
+        .point {
+            color: #ff6e40;
+        }
+    }
+}

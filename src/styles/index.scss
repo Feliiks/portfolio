@@ -1,0 +1,18 @@
+@import './settings';
+@import './components/navigation';
+
+@import './pages/home';
+@import './pages/about';
+@import './pages/skills';
+@import './pages/work';
+@import './pages/contact';
+@import './pages/game';
+
+@import './pages/works/lsvibes';
+@import './pages/works/portfolio';
+@import './pages/works/meteo';
+
+@import './components/preloader';
+@import './pages/notFound';
+
+@import './components/layout';

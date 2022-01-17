@@ -1,0 +1,25 @@
+.contactDeco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100vh;
+    width : 48%;
+    top: 0; right: 0;
+}
+
+
+@media screen and (max-width : 1550px) {
+    .contactDeco {
+        img {
+            height: 550px;
+            padding-left: 150px;
+        }
+    }
+}
+
+@media screen and (max-width : 1400px) {
+    .contactDeco {
+        display: none;
+    }
+}

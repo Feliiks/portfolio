@@ -1,0 +1,61 @@
+.btnContact {
+    position: relative;
+	height: 50px;
+    width: 220px;
+    overflow: hidden;
+	display: block;
+    font-family: 'EudoxusSans-Regular';
+	font-size: 14px;
+    margin-top: 70px;
+    color: rgba(#ffc13b, 1);
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: 3px;
+
+    .bg {
+        position: absolute;
+        background: #ffc13b;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        z-index: 2;
+        height: 100%;
+        width: 0;
+        left: -5%;
+        transform: skewX(-10deg);
+        transition: width 0.3s ease-out;
+    }
+
+    .base {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        border: 1px solid rgba(#ffc13b, 1);
+	    box-sizing: border-box;
+        transition: opacity 0.3s ease-out;
+    }
+
+    .text {
+        position: absolute;
+        z-index: 4;
+        height: 100%;
+        width: 100%;
+        left: 0; top: 0;
+    }
+}
+
+
+.btnContact:hover {
+    .bg {
+        width: 110%;
+    }
+
+    .base {
+        opacity: 0;
+    }
+
+    .text {
+        color: black;
+    }
+}

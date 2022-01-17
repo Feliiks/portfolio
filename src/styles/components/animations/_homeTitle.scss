@@ -1,0 +1,24 @@
+.homeTitle {
+    .text-content {
+        overflow: hidden;
+
+        .blast {
+            letter-spacing: 3px;
+            display: inline-flex;
+
+            color: #ff6e40;
+            font-family: 'PassionOne-Regular';
+            font-size: 110px;
+            font-weight: 100;
+            opacity: 0;
+        }
+
+        .test {
+            display: block;
+        }
+
+        .point {
+            color: #ffc13b;
+        }
+    }
+}

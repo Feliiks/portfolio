@@ -1,0 +1,88 @@
+.lsvibes {
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    flex-direction: column;
+    color: white;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .up {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        opacity: 0;
+        animation: 2s ease 2s both running load;
+        padding-left: 50px;
+
+        .fond {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: auto;
+            background: #ffc13b;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            width: auto;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            position: relative;
+            padding: 3px; margin: 3rem;
+        }
+
+        @media screen and (max-width: 1400px) {
+            .carousel {
+                width: 800px !important;
+            }
+        }
+
+        .content {
+            position: relative;
+            width: 1000px;
+            padding-top: 2rem;
+            
+            .left {
+                position: relative;
+                width: 50%;
+                float: left;
+                text-align: center;
+            }
+
+            .right {
+                position: relative;
+                width: 50%;
+                float: right;
+                text-align: center;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            .content {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@keyframes load {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@media screen and (max-width: 700px) {
+    .lsvibes {
+        overflow: scroll;
+    }
+}

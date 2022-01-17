@@ -1,0 +1,52 @@
+.layout {
+    opacity: 0;
+    animation: 2s ease 2.5s both running load;
+
+    p {
+        margin: 3px;
+    }
+
+    .tags {
+        display: flex;
+        position: absolute;
+        font-family: "LaBelleAurore-Regular"; 
+        color: rgb(148, 148, 148);
+        font-size: 18px;
+        opacity: 0.5;
+        flex-direction: column;
+        left: 190px;
+    }
+
+    .top {
+        top: 20px;
+    }
+
+    .bottom {
+        bottom: 20px;
+    }
+}
+
+
+@keyframes load {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+
+
+
+@media screen and (max-width : 1300px) {
+    .layout {
+        .tags {
+            left: 1rem;
+        }
+
+        .bottom {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@import './animations/contactTitle';
+@import './animations/contactParaph';
+
+.contactBox {
+    max-width: none;
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width : 1370px) { // .......... 1366x768
+    .contactBox {
+        margin-top: -3rem;
+    }
+}

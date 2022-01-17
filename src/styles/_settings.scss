@@ -1,0 +1,104 @@
+/* ---------------------- FONTS -------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wnpm runpm ght@100;300;400;700;900&display=swap');
+
+@font-face {
+	font-family: "Monaco";
+	src: url("../assets/fonts/Monaco.ttf");
+}
+@font-face {
+	font-family: "EudoxusSans-Bold";
+	src: url("../assets/fonts/EudoxusSans-Bold.ttf");
+}
+@font-face {
+	font-family: "EudoxusSans-ExtraBold";
+	src: url("../assets/fonts/EudoxusSans-ExtraBold.ttf");
+}
+@font-face {
+	font-family: "EudoxusSans-Regular";
+	src: url("../assets/fonts/EudoxusSans-Regular.ttf");
+}
+@font-face {
+	font-family: "OpenSans-Regular";
+	src: url("../assets/fonts/OpenSans-Regular.ttf");
+}
+@font-face {
+	font-family: "OpenSans-Bold";
+	src: url("../assets/fonts/OpenSans-Bold.ttf");
+}
+@font-face {
+	font-family: "OpenSans-ExtraBold";
+	src: url("../assets/fonts/OpenSans-ExtraBold.ttf");
+}
+@font-face {
+	font-family: "PassionOne-Regular";
+	src: url("../assets/fonts/PassionOne-Regular.ttf");
+}
+@font-face {
+	font-family: "PassionOne-Bold";
+	src: url("../assets/fonts/PassionOne-Bold.ttf");
+}
+@font-face {
+	font-family: "PassionOne-Black";
+	src: url("../assets/fonts/PassionOne-Black.ttf");
+}
+@font-face {
+	font-family: "LaBelleAurore-Regular";
+	src: url("../assets/fonts/LaBelleAurore-Regular.ttf");
+}
+
+
+/* ---------------- GLOBAL ------------------------------ */
+html {
+	overflow: hidden;
+	overflow-x: hidden;
+	cursor: none;
+}
+
+html::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	background: #1d1d1d;
+	font-family: "EudoxusSans-Regular";
+	margin: 0; padding: 0;
+}
+
+a {
+	text-decoration: none;
+	cursor: none;
+}
+
+.cursor {
+    width: 12px;
+    height: 12px;
+	background-color: rgba(#ff845f, 1);
+    border-radius: 50%;
+    position: absolute;
+  	pointer-events: none;
+	z-index: 10000;
+}
+
+h2 {
+	color: white;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+	width: 20%;
+	height: 250px;
+    position: relative;
+    overflow: hidden;
+}

@@ -1,0 +1,100 @@
+.workItem {
+    height: 220px;
+    width: 260px;
+    display: inline-block;
+    text-align: center;
+    margin: 5px;
+    transition: all 0.3s;
+    z-index: 1;
+
+    img {
+        position: absolute;
+        margin: auto;
+        top: 0; bottom: 0; left: 0; right: 0; 
+        max-width: 60%;
+    }
+
+    .disabled-img {
+        filter: blur(2px);
+    }
+
+    .thumb {
+        position: absolute;
+        margin: 0; padding: 0;
+        bottom: 0;
+        height: 35px;
+        width: 0;
+        background: #ffc13b;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        transform: skewX(-10deg);
+        left: -5px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .disabled-thumb {
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        background-color: #5a5a5a;
+        position: absolute;
+        bottom: 0; top: 0; left: 0; right: 0;
+        margin: auto;
+        height: 35px;
+        width: 50%;
+        z-index: 3;
+        transform: skewX(-10deg);
+    }
+
+    .disabled-thumb::after {
+        display: flex;
+        content: "Unavailable";
+        color: rgb(255, 255, 255);
+        height: 100%;
+        font-family: 'EudoxusSans-Bold';
+        font-size: 14px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .thumb::after {
+        display: flex;
+        content: "See more";
+        color: white;
+        height: 100%;
+        font-family: 'EudoxusSans-Bold';
+        font-size: 14px;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease-out;
+        margin-left: -10px;
+    }
+
+    .disabled {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+        background: rgba(#5a5a5a, .6);
+    }
+}
+
+.workItem:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transform: scale(1.03, 1.03);
+
+    .thumb {
+        width: 110%;
+    }
+
+    .thumb::after {
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width : 780px) {
+    .workItem {
+        height: 150px;
+        width: 150px;
+    }
+}

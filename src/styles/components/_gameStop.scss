@@ -1,0 +1,30 @@
+.gameStop {
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    margin: auto;
+    left: 0; right: 0; bottom: 0; top: 0;
+    animation: 2s ease 2s both running load;
+
+    span  {
+        margin-top: 20px;
+        line-height: 30px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+    }
+}
+
+@keyframes load {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

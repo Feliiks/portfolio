@@ -1,0 +1,9 @@
+@import '../components/gameStop';
+
+.game {
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    padding-left: 12rem;
+}
