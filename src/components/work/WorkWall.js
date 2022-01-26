@@ -27,7 +27,7 @@ const WorkWall = () => {
     <div className="workWall">
       <ul className="works-list">
         {items.map((item) => (
-          <WorkItem item={item} key={item.name}/>
+          <WorkItem item={item} key={item.name} />
         ))}
       </ul>
     </div>
