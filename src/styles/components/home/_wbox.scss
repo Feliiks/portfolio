@@ -1,0 +1,15 @@
+@import 'homeTitle';
+@import '../others/animatedLine';
+@import '../others/btnContact';
+
+.Wbox {
+    padding-top: 16rem;
+    opacity: 0;
+    animation: 2s ease 2.5s both running load;
+}
+
+@media screen and (max-width : 1370px) { // .......... 1366x768
+    .Wbox {
+        padding-top: 12rem;
+    }
+}

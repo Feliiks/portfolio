@@ -1,0 +1,18 @@
+@import 'contactBox';
+@import 'contactForm';
+@import 'contactDeco';
+
+.contactContent {
+	padding-top: 11rem;
+    opacity: 0;
+    animation: 2s ease 2s both running load;
+}
+
+@keyframes load {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

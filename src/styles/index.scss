@@ -1,18 +1,18 @@
 @import './settings';
-@import './components/navigation';
+@import 'components/layout/navigation';
 
-@import './pages/home';
-@import './pages/about';
-@import './pages/skills';
-@import './pages/work';
-@import './pages/contact';
-@import './pages/game';
+@import 'components/home';
+@import 'components/about';
+@import 'components/skills';
+@import 'components/work';
+@import 'components/contact';
+@import 'components/game';
 
-@import './pages/works/lsvibes';
-@import './pages/works/portfolio';
-@import './pages/works/meteo';
+@import 'components/work/works/lsvibes';
+@import 'components/work/works/portfolio';
+@import 'components/work/works/meteo';
 
-@import './components/preloader';
-@import './pages/notFound';
+@import 'components/preloader/preloader';
+@import 'components/errorPages/notFound';
 
-@import './components/layout';
+@import 'components/layout/layout';

@@ -1,0 +1,21 @@
+@import 'contactContent';
+
+.contact {
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    padding-left: 12rem;
+}
+
+
+@media screen and (max-width : 1300px) {
+    .contact {
+        padding-left: 1rem;
+        overflow: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}

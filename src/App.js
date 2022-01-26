@@ -1,16 +1,19 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import About from './pages/About';
-import Skills from './pages/Skills';
-import Work from './pages/Work';
-import Contact from './pages/Contact';
-import Game from './pages/Game';
-import NotFound from './pages/NotFound';
-import Cursor from './components/Cursor';
-import LsVibes from './pages/works/LsVibes';
-import Portfolio from './pages/works/Portfolio';
-import Meteo from './pages/works/Meteo';
+import Home from './components/home';
+import About from './components/about';
+import Skills from './components/skills';
+import Work from './components/work';
+import Contact from './components/contact';
+import Game from './components/game';
+
+import NotFound from './components/errorPages/NotFound';
+
+import Cursor from './components/others/Cursor';
+import LsVibes from './components/work/works/LsVibes';
+import CarteJeuneFFCC from './components/work/works/CarteJeuneFFCC';
+import AndreaNaturo from './components/work/works/AndreaNaturo';
+import Navigation from './components/layout/Navigation'
 
 const App = () => {
 
@@ -19,6 +22,7 @@ const App = () => {
     <>
       <Cursor />
       <BrowserRouter>
+        <Navigation />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about-me" exact component={About} />
@@ -26,9 +30,10 @@ const App = () => {
           <Route path="/my-work" exact component={Work} />
           <Route path="/contact" exact component={Contact} />
           <Route path="/lets-play" exact component={Game} />
-          <Route path="/lsvibes" exact component={LsVibes} />
-          <Route path="/portfolio" exact component={Portfolio} />
-          <Route path="/app-meteo" exact component={Meteo} />
+
+          <Route path="/work/lsvibes" exact component={LsVibes} />
+          <Route path="/work/cartejeuneffcc" exact component={CarteJeuneFFCC} />
+          <Route path="/work/andreanaturo" exact component={AndreaNaturo} />
           <Route component={NotFound} />
         </Switch>
       </BrowserRouter>

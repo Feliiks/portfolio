@@ -1,0 +1,13 @@
+@import 'aboutTitle';
+@import 'aboutParaph';
+
+.AboutBox {
+    max-width: 45%;
+}
+
+@media screen and (max-width: 1300px) {
+    .AboutBox {
+        padding-top: 9rem;
+        max-width: 90%;
+    }
+}
