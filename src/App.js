@@ -10,9 +10,7 @@ import Game from './components/game';
 import NotFound from './components/errorPages/NotFound';
 
 import Cursor from './components/others/Cursor';
-import LsVibes from './components/work/works/LsVibes';
-import CarteJeuneFFCC from './components/work/works/CarteJeuneFFCC';
-import AndreaNaturo from './components/work/works/AndreaNaturo';
+
 import Navigation from './components/layout/Navigation'
 
 const App = () => {
@@ -31,9 +29,6 @@ const App = () => {
           <Route path="/contact" exact component={Contact} />
           <Route path="/lets-play" exact component={Game} />
 
-          <Route path="/work/lsvibes" exact component={LsVibes} />
-          <Route path="/work/cartejeuneffcc" exact component={CarteJeuneFFCC} />
-          <Route path="/work/andreanaturo" exact component={AndreaNaturo} />
           <Route component={NotFound} />
         </Switch>
       </BrowserRouter>

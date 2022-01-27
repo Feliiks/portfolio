@@ -3,6 +3,7 @@ import works from '../../assets/works.json'
 import WorkItem from './WorkItem'
 import WorkTitle from '../animations/WorkTitle'
 import WorkParaph from '../animations/WorkParaph'
+import ItemInfos from './ItemInfos'
 
 function WorkContent () {
   const [displayItemInfos, setDisplayItemInfos] = useState(false)
@@ -26,10 +27,6 @@ function WorkContent () {
     />
   ))
 
-  const itemInfosList = Object.keys(infos).map((info) => (
-    <p key={info}> {infos[info]} </p>
-  ))
-
   return (
     <div className="workContent">
       <div className="workBox">
@@ -38,10 +35,10 @@ function WorkContent () {
       </div>
       <div className="workWall">
         { displayItemInfos ?
-          <div className="item-infos">
-            <div className="exit" onClick={closeItemInfos} />
-            { itemInfosList }
-          </div> : null
+          <ItemInfos
+            closeItemInfos={closeItemInfos}
+            infos={infos}
+          /> : null
         }
         <ul className="works-list">
           { list }

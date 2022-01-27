@@ -19,8 +19,10 @@ function WorkParaph () {
         Currently, I work mainly on the front-end/back-end of a few
         projects on the side of my studies.
         <br/><br/>
-        If you want more details about a project, click on it for more
-        informations.
+        <u>
+          If you want more details about a project, click on it for more
+          informations.
+        </u>
       </p>
     </div>
   )
