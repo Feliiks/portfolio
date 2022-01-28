@@ -1,7 +1,7 @@
 {
   "item1" : {
     "name": "Los Santos Vibes",
-    "description": "Website for the game server LSVibes",
+    "description": "Website of the GTA V roleplay server LS Vibes.",
     "logo": "../images/lsvibes_logo.png",
     "bgColor": "rgba(11, 11, 11, 1)",
     "projectLeader": "Leito",
@@ -19,7 +19,7 @@
     "developers": "Ludovic Sobrero",
     "organisation": "French federation of Camargaise race",
     "technologies": "Angular, Node.js - Express.js, Prisma ORM",
-    "image": "./images/cartejeuneffcc1.jpg"
+    "image": "./images/cartejeuneffcc.jpg"
   },
   "item3" : {
     "name": "Andrea Naturopathie",
@@ -28,6 +28,7 @@
     "bgColor": "rgb(255,255,255)",
     "projectLeader": "Feliiks",
     "developers": "Ludovic Sobrero",
+    "organisation": "Andrea Naturopathie",
     "technologies": "React.js, Node.js - Express.js, Prisma ORM",
     "image": "./images/andrea1.jpg"
   }
