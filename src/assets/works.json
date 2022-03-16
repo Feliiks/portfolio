@@ -11,6 +11,28 @@
     "image": "./images/lsvibes1.jpg"
   },
   "item2" : {
+    "name": "Andrea Naturopathie",
+    "description": "Website of naturopath Andrea Sobrero",
+    "logo": "../images/andrea_logo.png",
+    "bgColor": "rgb(255,255,255)",
+    "projectLeader": "Ludovic Sobrero",
+    "developers": "Ludovic Sobrero",
+    "organisation": "Andrea Naturopathie",
+    "technologies": "React.js, Node.js - Express.js, Prisma ORM",
+    "image": "./images/andrea1.jpg"
+  },
+  "item3" : {
+    "name": "Cannabis Growers Club",
+    "description": "Website of the Solana Cannabis Growers Club",
+    "logo": "../images/scgc_logo.jpg",
+    "bgColor": "#081531",
+    "projectLeader": "Ludovic Sobrero",
+    "developers": "Ludovic Sobrero",
+    "organisation": "Cannabis Growers Club",
+    "technologies": "React.js",
+    "image": "./images/scgc.jpg"
+  },
+  "item4" : {
     "name": "Carte jeune FFCC",
     "description": "Website (youth card) of the French Federation of Camargue Race",
     "logo": "../images/cartejeuneffcc_logo.png",
@@ -20,16 +42,5 @@
     "organisation": "French federation of Camargaise race",
     "technologies": "Angular, Node.js - Express.js, Prisma ORM",
     "image": "./images/cartejeuneffcc.jpg"
-  },
-  "item3" : {
-    "name": "Andrea Naturopathie",
-    "description": "Website of naturopath Andrea Sobrero",
-    "logo": "../images/andrea_logo.png",
-    "bgColor": "rgb(255,255,255)",
-    "projectLeader": "Feliiks",
-    "developers": "Ludovic Sobrero",
-    "organisation": "Andrea Naturopathie",
-    "technologies": "React.js, Node.js - Express.js, Prisma ORM",
-    "image": "./images/andrea1.jpg"
   }
 }

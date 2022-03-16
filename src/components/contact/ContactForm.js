@@ -58,8 +58,9 @@ const doVerif = () => {
         formMsg.style.fontSize = "20px";
         form.style.opacity = '0'
         sendFeedback("template_vpmw3ha", {
-            name,
-            email,
+            toEmail: "sobrero.ludovic@gmail.com",
+            fromName: name,
+            fromEmail: email,
             subject,
             message
         });
